@@ -1,0 +1,48 @@
+@import "_normalize.scss";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+/*-----------------------------
+
+	Layout
+
+------------------------------*/
+
+.container{
+	@include outer-container();
+}
+
+header{
+	width: 100%;
+	min-height: 900px;
+	background: url('../img/bg-test.jpg');
+	padding-top: 100px;
+
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+
+}
+
+/*-----------------------------
+
+	Helpers
+
+------------------------------*/
+
+.left,
+.right{
+	@include span-columns(6 of 12);
+}
+
+
+/*-----------------------------
+
+	Type
+
+------------------------------*/
+
+h1{
+	font-family: 'Roboto Condensed', sans-serif;
+}

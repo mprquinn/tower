@@ -1,0 +1,10 @@
+---
+first_name: Admin
+last_name: McAwesome
+roles:
+  - admin
+email: email@example.com
+password: ""
+_uid: MjMdwJ53261d3701865GCj6T23q
+password_hash: $2a$08$SWSYYUCrZPbq6hWQdrIf5OL5ArPyAA7sQfpfjD5vEiG/fdg4oXDku
+---
