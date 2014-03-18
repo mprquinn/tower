@@ -1,0 +1,23 @@
+title: Project
+
+fields:
+  title: Project Title
+    instructions: These are instructions.
+
+  description: 
+    display: Project Description
+    required: true
+    default: 
+    type: redactor
+
+  comment:
+    type: textarea
+    display: Comment
+    instructions:
+      below: A little about the camp spot.
+
+  content:
+    display: Page Content
+    required: false
+    default:
+    type: hidden
