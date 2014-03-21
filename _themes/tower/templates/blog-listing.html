@@ -1,0 +1,12 @@
+<div class="container">
+	<h1>{{ title }}</h1>
+	{{ content }}
+	
+	<div class="blog-posts">
+		{{ entries: listing folder="blog" limit="5"}}
+			<a href="{{ url }}"><h2>{{ title }}</h2></a>
+			<h4>{{ date }}</h4>
+			{{ content }}
+		{{ /entries:listing }}
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ _site_name }}</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ theme:css }}" />
+  <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
+</head>
+<body>
+  <header>
+    <nav>
+      {{ theme:partial src="nav" }}
+    </nav>
+    <h1>Big Header is here</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <section>
+        <!-- <p class="site-name"><a href="{{ homepage }}">{{ _site_name }}</a></p> -->
+        
+      </section>
+      <header>
+        <h1>{{ title }}</h1>
+        <p>{{ content }}</p>
+      </header>
+    </div>
+  </section>
+</div>
+
+  <!-- javascript bits and bobs -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="{{ theme:js }}"></script>
+</body>
+</html>

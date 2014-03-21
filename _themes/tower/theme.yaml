@@ -5,15 +5,15 @@
 ###########################################################################################
 
 # Theme name
-theme_name: Denali
+theme_name: Tower
 
 # Comments + Disqus
 disqus_account: changeme
 show_comments: no
 
 # Homepage configuration
-home_blog_items: 2
-home_calendar_items: 2
+home_blog_items: 0
+home_calendar_items: 0
 
 # Global text snippets
 no_results_text: "Sorry, no results found."
