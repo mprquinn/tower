@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ _site_name }}</title>
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ theme:css }}" />
   <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
 </head>
@@ -12,7 +12,12 @@
     <nav>
       {{ theme:partial src="nav" }}
     </nav>
+    <section>
     <h1>Big Header is here</h1>
+    <h2>Smaller header</h2>
+    <h3>Smallest header</h3>
+    <h4>Smalllllleest!?</h4>
+    </section>
   </header>
   <div class="container">
     <div class="row">
@@ -22,7 +27,7 @@
       </section>
       <header>
         <h1>{{ title }}</h1>
-        <p>{{ content }}</p>
+        {{ content }}
       </header>
     </div>
   </section>
