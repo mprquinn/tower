@@ -36,12 +36,13 @@ section{
 
 	.home &{
 		height: 600px;
-		background: url('../img/bg.jpg') 0px 0px no-repeat;
+		background: url('../img/bg-tower.jpg') 0px -175px no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 
 		@include media($tablet) {
 			height: 250px;
+			background-position: 0 0;
 		}
 	}
 	
