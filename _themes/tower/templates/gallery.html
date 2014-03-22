@@ -1,13 +1,15 @@
 <div class="block">
-		<header>
+		<header class="container">
 			<h1>{{ title }}</h1>
+			{{ layout_content }}
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iure, quam provident adipisci odit enim harum modi id ad aut natus vero saepe quod aspernatur reiciendis! Dolores voluptate eaque expedita!</p>
 		</header>
-		<div class="masonry">
+		<section class="gallery" data-columns>
 		{{ gallery }}
 		<div class="item">
 			<img src="{{ photo }}" title="{{ caption }}" />
 			<div class="caption">{{ caption }}</div>
 		</div>
 		{{ /gallery }}
-	</div>
+	</section>
 </div>

@@ -7,35 +7,23 @@
   <link rel="stylesheet" href="{{ theme:css }}" />
   <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
 </head>
-<body class="home">
+<body>
   <header class="intro">
 
       {{ theme:partial src="nav" }}
 
-    <section class="container">
-    </section>
   </header>
-  <div class="container">
-    <div class="row">
+  
       <section>
-        <h1>Big Header is here</h1>
-        <h2>Smaller header</h2>
-        <h3>Smallest header</h3>
-        <h4>Smalllllleest!?</h4>
-        <!-- <p class="site-name"><a href="{{ homepage }}">{{ _site_name }}</a></p> -->
-        
+        {{ layout_content }}
       </section>
-      <header>
-        <h1>{{ title }}</h1>
-        {{ content }}
-      </header>
-    </div>
-  </section>
+ 
 </div>
 
   <!-- javascript bits and bobs -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script src="{{ theme:js src="headerSize"}}"></script>
+  <script src="{{ theme:js src="lib/salvatore.min" }}"></script>
   <script src="{{ theme:js }}"></script>
 </body>
 </html>

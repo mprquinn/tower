@@ -8,22 +8,22 @@
   <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <section>
-        <!-- <p class="site-name"><a href="{{ homepage }}">{{ _site_name }}</a></p> -->
-        {{ theme:partial src="nav" }}
-      </section>
+  <header class="intro">
 
+      {{ theme:partial src="nav" }}
+
+  </header>
+  <div class="container">
       <section>
         {{ layout_content }}
       </section>
-    </div>
   </section>
 </div>
 
   <!-- javascript bits and bobs -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="{{ theme:js src="headerSize"}}"></script>
+  <script src="{{ theme:js src="lib/salvatore.min" }}"></script>
   <script src="{{ theme:js }}"></script>
 </body>
 </html>
