@@ -1,5 +1,5 @@
 $(document).ready( function () {
 	
 	// Set up header
-	HeaderSize.init();
+	// HeaderSize.init();
 });
