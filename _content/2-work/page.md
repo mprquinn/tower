@@ -1,8 +1,5 @@
 ---
-_fieldset: page
-_template: page
 title: Work
+_template: work_listing
+_fieldset: no_content
 ---
-## This is the work page.
-
-This page will pull in latest work and also filter by categories.

@@ -10,14 +10,25 @@ fields:
     default: 
     type: redactor
 
-  comment:
-    type: textarea
-    display: Comment
-    instructions:
-      below: A little about the camp spot.
+  date:
+    display: date
+    type: date
 
-  content:
-    display: Page Content
-    required: false
-    default:
-    type: hidden
+  category:
+    display: Project category (wall paper or canvas)
+    type: tags
+
+  gallery:
+    display: Project gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Project Title
+        type: text
+      img:
+        display: Image
+        type: file
+        allowed: [png, gid, jpg, jpeg]
+        destination: assets/img/work

@@ -1,2 +1,25 @@
 type: date
-_fieldset: events
+
+fields:
+  _template: # note the prefixed _underscore
+    display: Project
+    type: templates
+
+  gallery:
+    display: Image Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      title:
+        display: Image Title
+        type: text
+        width: 50%
+      img:
+        display: Image
+        type: file
+        allowed: [png, gif, jpg, jpeg]
+        destination: assets/img/work # make sure your folder is writeable
+
+  content:
+    type: hidden

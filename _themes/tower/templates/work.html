@@ -1,0 +1,16 @@
+<div class="block">
+		<header class="container">
+			<h1>{{ title }}</h1>
+			{{ content }}
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iure, quam provident adipisci odit enim harum modi id ad aut natus vero saepe quod aspernatur reiciendis! Dolores voluptate eaque expedita!</p>
+		</header>
+		<section class="gallery" data-columns>
+		<ul>
+			{{ entries:listing folder="walls|canvas|paper" }}
+			<li>
+				<a href="{{ url }}">{{ title }}</a>
+			</li>
+			{{ entries:listing }}
+		</ul>
+	</section>
+</div>

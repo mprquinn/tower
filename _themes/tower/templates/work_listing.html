@@ -1,0 +1,11 @@
+<h2>Gallery Using Gallery Listing Template</h2>
+<ul>
+{{ entries:listing folder="work" taxonomy="no" }}
+<li>
+  <h2><a href="{{ url }}">{{ title }}</a></h2>
+  {{ gallery }}
+  <a href="{{ img }}">
+  <img src="{{ image_url }}">
+</li>
+{{ /entries:listing }}
+</ul>

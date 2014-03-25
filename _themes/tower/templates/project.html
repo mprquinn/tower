@@ -1,0 +1,13 @@
+<h2>Gallery Using Single Gallery Template</h2>
+<div>
+  <ul class="gallery">
+    {{ gallery }}
+    <li>
+      <a href="{{ img }}">
+        <img src="{{ img }}" alt="{{ title }}">
+        <div>{{ title }}</div>
+      </a>
+    </li>
+    {{ /gallery }}
+  </ul>
+</div>
