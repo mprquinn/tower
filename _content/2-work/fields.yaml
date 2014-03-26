@@ -2,8 +2,14 @@ type: date
 
 fields:
   _template: # note the prefixed _underscore
-    display: Project
+    display: Template
     type: templates
+
+  cover_image:
+    display: Cover Image
+    type: file
+    allowed: [png, jpg, jpeg, gif]
+    destination: assets/img/work
 
   gallery:
     display: Image Gallery
@@ -20,6 +26,10 @@ fields:
         type: file
         allowed: [png, gif, jpg, jpeg]
         destination: assets/img/work # make sure your folder is writeable
+
+  categories:
+    display: Categories
+    type: tags
 
   content:
     type: hidden

@@ -18,6 +18,14 @@ fields:
     display: Project category (wall paper or canvas)
     type: tags
 
+  preview:
+    display: Cover Image
+    type: file
+      display: Upload Image
+      allowed: [png, jpg, jpeg, gif]
+      destination: assets/img/work
+
+
   gallery:
     display: Project gallery
     type: grid
@@ -30,5 +38,5 @@ fields:
       img:
         display: Image
         type: file
-        allowed: [png, gid, jpg, jpeg]
+        allowed: [png, gif, jpg, jpeg]
         destination: assets/img/work
