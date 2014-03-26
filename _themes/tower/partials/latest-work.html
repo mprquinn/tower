@@ -1,0 +1,11 @@
+<aside class="work">
+	<h3>My latest projects:</h3>
+	<ul>
+	{{ entries:listing folder="work" taxonomy="no" }}
+		<li class="project">
+			<h6>{{ title }}</h6>
+			<img src="{{ cover_image }}" alt="{{ title }}">
+		</li>
+	{{ /entries:listing }}
+	</ul>
+</aside>

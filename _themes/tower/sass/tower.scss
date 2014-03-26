@@ -131,6 +131,17 @@ section{
 			margin: 0;
 			line-height: 65px;
 
+			a{
+				color: #efefef;
+				text-decoration: none;
+			}
+
+			&:visited,
+			&:hover{
+				color: #efefef;
+				text-decoration: none;
+			}
+
 			@include media($mobile) {
 				padding-left: 10px;
 			}
@@ -245,6 +256,38 @@ body{
 	Sections
 
 ----------------------*/
+
+// Home
+
+.home{
+	.content{
+		@include span-columns(8 of 12);
+	}
+
+	aside.work{
+		@include span-columns(4 of 12);
+		margin-top: 30px;
+		padding: 15px 10px;
+		background: #1d1d1d;
+		color: #efefef;
+
+		ul{
+			padding: 0;
+		}
+
+		h3,h6{
+			color: #efefef;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
 
 // Gallery
 
