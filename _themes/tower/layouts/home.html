@@ -8,32 +8,23 @@
   <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
 </head>
 <body class="home">
+  <div class="wrap">
   <header class="intro">
 
       {{ theme:partial src="nav" }}
       
-    <div class="callout">
-      <img src="{{ theme:img src="test.png" }}" alt="">
+  <div class="slider">
+      <ul class="slides">
+        <li class="slide">
+          <div style="background-image: url('{{ theme:img src='tower8.jpg' }}')"></div>
+        </li>
+      </ul>
     </div>
+
     
-<!--       <div class="cycle-slideshow"
-      data-cycle-fx="scrollHorz"
-      data-cycle-prev="#prev"
-      data-cycle-next="#next"
-      >
-        <img src="{{ theme:img src="bg.jpg" }}">
-        <img src="{{ theme:img src="bg-tower.jpg" }}">
-        <img src="{{ theme:img src="bg-video.jpg" }}">
-
-      </div>
-
-      <div class="pagination">
-          <a href=# id="prev">Prev</a> 
-          <a href=# id="next">Next</a>
-        </div> -->
 
   </header>
-  <div class="container">
+  <div class="main container">
 
       <section class="content">
         <h1>{{ title }}</h1>
@@ -48,10 +39,18 @@
 
   <!-- javascript bits and bobs -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="{{ theme:js src="lib/glide.min" }}"></script>
   <script src="{{ theme:js src="headerSize" }}"></script>
   <script src="{{ theme:js src="menuDrops" }}"></script>
+  <script src="{{ theme:js src="lib/jquery.collagePlus.min" }}"></script>
   <script src="{{ theme:js src="lib/jquery.jpanel.min" }}"></script>
-  <script src="{{ theme:js src="lib/jquery.cycle.min" }}"></script>
+  
   <script src="{{ theme:js }}"></script>
+  <script>
+  $(document).ready(function () {
+      // $('.slider').glide();
+  });
+  </script>
+  </div>
 </body>
 </html>

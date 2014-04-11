@@ -15,6 +15,11 @@ $(document).ready( function () {
 		jPM.on();
 	})();
 
+	// Galleries
+	 $(window).load(function () {
+        $('.Collage').collagePlus();
+    });
+
 	$('#menu').click( function() {
 		$(this).toggleClass('hidden');
 	});
